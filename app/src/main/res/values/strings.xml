@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Sudoku</string>
+    <string name="nowa">Nowa gra</string>
+    <string name="wyjdz">Wyjście</string>
+    <string name="latwy">Łatwy</string>
+    <string name="sredni">Średni</string>
+    <string name="trudny">Trudny</string>
+    <string name="wroc">Wróć</string>
+    <string name="level">Wybierz poziom trudności</string>
+    <string name="poddaj">Poddaj się</string>
+    <string name="wskazowka">Wskazówka</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="empty"></string>
+    <string name="again">Zagraj jeszcze raz</string>
+    <string name="_0_3">0/3</string>
+    <string name="b_dy">Błędy:</string>
+    <string name="gumka">Gumka</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="wskaz_wki">Wskazówki:</string>
+    <string name="hints">3/3</string>
+
+</resources>

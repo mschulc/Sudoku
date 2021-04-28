@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".end_game">
+
+    <Button
+        android:id="@+id/again"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:background="#1565C0"
+        android:onClick="again"
+        android:text="@string/again"
+        android:textColor="#F8F8F8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/finish"
+        android:layout_width="366dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:text="ZWYCIĘSTWO!"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="222dp"
+        android:layout_height="326dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finish"
+        app:srcCompat="@drawable/win" />
+</android.support.constraint.ConstraintLayout>
