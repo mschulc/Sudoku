@@ -97,6 +97,7 @@ public class game extends AppCompatActivity {
             for (int b = 0; b < 9; b++){
                 tb[a][b].setTextOn("     \n     \n     ");
                 tb[a][b].setTextOff("     \n     \n     ");
+                tb[a][b].setTextColor(Color.parseColor("#15233B"));
             }
         }
 
@@ -208,7 +209,7 @@ public class game extends AppCompatActivity {
             do {
                 x = random.nextInt(9);                              // Randomly chose index for hint
                 y = random.nextInt(9);
-                if (tb[x][y].getText().equals("" ) || tb[x][y].getTextColors().equals(Color.parseColor("#15233B"))) {
+                if (tb[x][y].getCurrentTextColor() == (Color.parseColor("#15233B")) || tb[x][y].getText().equals("")) {
                     tb[x][y].setTextOff(String.valueOf(game_table[x][y]));
                     tb[x][y].setTextOn(String.valueOf(game_table[x][y]));
                     tb[x][y].setTextSize(25);
