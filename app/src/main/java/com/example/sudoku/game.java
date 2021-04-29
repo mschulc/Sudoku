@@ -208,7 +208,7 @@ public class game extends AppCompatActivity {
             do {
                 x = random.nextInt(9);                              // Randomly chose index for hint
                 y = random.nextInt(9);
-                if (tb[x][y].getText().equals("")) {
+                if (tb[x][y].getText().equals("" ) || tb[x][y].getTextColors().equals(Color.parseColor("#15233B"))) {
                     tb[x][y].setTextOff(String.valueOf(game_table[x][y]));
                     tb[x][y].setTextOn(String.valueOf(game_table[x][y]));
                     tb[x][y].setTextSize(25);
