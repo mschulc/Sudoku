@@ -179,4 +179,27 @@ public class Sudoku_generator_Test {
         //then
         Assert.assertNotEquals(resault, 0);
     }
+
+    @Test
+    public void random_boards_test(){
+
+        //given
+        int[][] board1 = Sudoku_generator.Sudoku_generator();
+        int[][] board2 = Sudoku_generator.Sudoku_generator();
+        int[][] board3 = Sudoku_generator.Sudoku_generator();
+        int[][] board4 = Sudoku_generator.Sudoku_generator();
+        int[][] board5 = Sudoku_generator.Sudoku_generator();
+
+        //then
+        Assert.assertNotEquals(board1, board2);
+        Assert.assertNotEquals(board1, board3);
+        Assert.assertNotEquals(board1, board4);
+        Assert.assertNotEquals(board1, board5);
+        Assert.assertNotEquals(board2, board3);
+        Assert.assertNotEquals(board2, board4);
+        Assert.assertNotEquals(board2, board5);
+        Assert.assertNotEquals(board3, board4);
+        Assert.assertNotEquals(board3, board5);
+        Assert.assertNotEquals(board4, board5);
+    }
 }

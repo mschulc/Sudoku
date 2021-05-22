@@ -126,4 +126,38 @@ public class Level_generator_Test {
         Assert.assertTrue(resault);
     }
 
+    @Test
+    public void random_indexes_generator_test(){
+
+        //given
+        int[][] tab_easy1 = Level_generator.lvl(1);
+        int[][] tab_easy2 = Level_generator.lvl(1);
+        int[][] tab_easy3 = Level_generator.lvl(1);
+
+        int[][] tab_medium1 = Level_generator.lvl(2);
+        int[][] tab_medium2 = Level_generator.lvl(2);
+        int[][] tab_medium3 = Level_generator.lvl(2);
+
+        int[][] tab_hard1 = Level_generator.lvl(3);
+        int[][] tab_hard2 = Level_generator.lvl(3);
+        int[][] tab_hard3 = Level_generator.lvl(3);
+
+        //then
+            //easy
+        Assert.assertNotEquals(tab_easy1, tab_easy2);
+        Assert.assertNotEquals(tab_easy1, tab_easy3);
+        Assert.assertNotEquals(tab_easy2, tab_easy3);
+            //medium
+        Assert.assertNotEquals(tab_medium1, tab_medium2);
+        Assert.assertNotEquals(tab_medium1, tab_medium3);
+        Assert.assertNotEquals(tab_medium2, tab_medium3);
+            //hard
+        Assert.assertNotEquals(tab_hard1, tab_hard2);
+        Assert.assertNotEquals(tab_hard1, tab_hard3);
+        Assert.assertNotEquals(tab_hard2, tab_hard3);
+
+
+
+    }
+
 }
