@@ -161,4 +161,22 @@ public class Sudoku_generator_Test {
         Assert.assertEquals(45, column9);
 
     }
+
+    @Test
+    public void not_empty_array_Test()
+    {
+        //given
+        int resault = 0;
+        int[][] example_sudoku_tab = Sudoku_generator.Sudoku_generator();
+
+        //when
+        for(int i = 0; i < 9; i++){
+            for(int j = 0; j < 9; j++){
+                resault =+ example_sudoku_tab[i][j];
+            }
+        }
+
+        //then
+        Assert.assertNotEquals(resault, 0);
+    }
 }
